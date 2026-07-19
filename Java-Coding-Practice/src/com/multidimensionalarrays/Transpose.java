@@ -1,3 +1,10 @@
+/* 
+ * Program: Transpose of a Matrix
+ * Topic: Multidimensional Arrays
+ * Description: Demonstrates declaration, initialization,
+ * input, transpose, and display of a matrix.
+ */
+
 package com.multidimensionalarrays;
 
 import java.util.Scanner;
@@ -8,11 +15,16 @@ public class Transpose {
 		
 		Scanner sc = new Scanner(System.in); 
 		
+		//Read the dimensions of the matrix
 		System.out.println("Enter number of rows and columns :");
 		int rows = sc.nextInt();
 		int cols = sc.nextInt();
+		
+		//Declare the original matrix and its transpose
 		int matrix[][]=new int[rows][cols];
 		int transpose[][]=new int[cols][rows];
+		
+		//Read the elements of the original matrix
 		for(int i=0;i<rows;i++)
 		{
 			for(int j=0;j<cols;j++)
@@ -20,6 +32,8 @@ public class Transpose {
 				matrix[i][j]=sc.nextInt();
 			}
 		}
+		
+		//Generating transpose by interchanging rows and columns
 		for(int i=0;i<cols;i++)
 		{
 			for(int j=0;j<rows;j++)
@@ -28,6 +42,7 @@ public class Transpose {
 			}
 		}
 		
+		//Display the transpose matrix
 		System.out.println("Matrix after Transpose : ");
 		for(int i=0;i<cols;i++)
 		{
@@ -38,7 +53,8 @@ public class Transpose {
 			System.out.println();
 		}
 		
-		
+		//close the scanner object
+		sc.close();
 	}
 
 }
