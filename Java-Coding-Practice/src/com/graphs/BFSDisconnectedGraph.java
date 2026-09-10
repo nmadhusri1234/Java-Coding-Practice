@@ -5,7 +5,6 @@ public class BFSDisconnectedGraph {
 	
 	public static void bfs(ArrayList<ArrayList<Integer>> graph,int vertex,boolean vis[])
 	{
-		
 		Queue<Integer> q = new LinkedList<>();
 		
 		vis[vertex] = true;
@@ -28,9 +27,6 @@ public class BFSDisconnectedGraph {
 		}
 		
 	}
-	
-	
-
 	public static void main(String[] args) {
 		
 		int vertices=5;
