@@ -13,7 +13,6 @@ public class FunctionChainingDemo {
 		//applying function chaining using andThen() and compose()
 		//using andThen()-->left to right
 		
-		
 		Function<Integer,Integer> result = add10.andThen(multiply2);
 		System.out.println(result.apply(10));
 		
