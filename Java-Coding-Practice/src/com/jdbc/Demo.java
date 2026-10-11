@@ -13,7 +13,7 @@ public class Demo {
 					"password"
 					);
 			Statement st = con.createStatement();
-			ResultSet rs = st.executeQuery("");
+			ResultSet rs = st.executeQuery(" ");
 			con.close();
 		}
 		catch(Exception e)
